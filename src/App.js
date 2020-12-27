@@ -1,12 +1,18 @@
-import logo from './logo.svg';
+//import logo from './logo.svg';
+import logo from './Images/silverball.jpg';
 import './App.css';
+import Routes from './Routes';
+import Login from './components/LoginPage';
+import {Button} from '@material-ui/core';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <h1>Group 7's Ornament Shop</h1>
+        <Login />
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
+        {/* <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
         <a
@@ -16,8 +22,11 @@ function App() {
           rel="noopener noreferrer"
         >
           Learn React
-        </a>
+        </a> */}
+
       </header>
+      <Routes />
+      <Button color="primary">HelloWorld</Button>
     </div>
   );
 }
